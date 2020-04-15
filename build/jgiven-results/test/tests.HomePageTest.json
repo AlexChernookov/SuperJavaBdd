@@ -1,0 +1,71 @@
+{
+  "className": "tests.HomePageTest",
+  "name": "Home Page",
+  "scenarios": [
+    {
+      "className": "tests.HomePageTest",
+      "testMethodName": "check_change_language_to_german",
+      "description": "check change language to german",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "open home page",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "open home page"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 2265399210
+            },
+            {
+              "name": "Click \u0027DE\u0027 icon",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Click \u0027DE\u0027 icon"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1355509241
+            },
+            {
+              "name": "Check language switched to German",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Check language switched to German"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 5074822303
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 8698379760
+        }
+      ],
+      "durationInNanos": 8698379760,
+      "executionStatus": "SUCCESS"
+    }
+  ],
+  "tagMap": {}
+}

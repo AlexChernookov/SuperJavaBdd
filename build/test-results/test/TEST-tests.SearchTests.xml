@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.SearchTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-04-15T21:35:16" hostname="MacBook-Pro-Oleksandr.local" time="25.31">
+  <properties/>
+  <testcase name="search_by_existing_keyword[0: Australia]" classname="tests.SearchTests" time="7.24"/>
+  <testcase name="search_by_existing_keyword[1: United Kingdom]" classname="tests.SearchTests" time="5.895"/>
+  <testcase name="search_by_existing_keyword[2: USA]" classname="tests.SearchTests" time="6.354"/>
+  <testcase name="search_by_not_existing_keyword" classname="tests.SearchTests" time="5.821"/>
+  <system-out><![CDATA[
+Test Class: tests.SearchTests
+
+ Search by existing keyword
+
+   Given open search page
+    When Search by <search>
+    Then Check <search> is in search result
+
+  Cases:
+
+   | # | Description    | search         | Status  |
+   +---+----------------+----------------+---------+
+   | 1 | Australia      | Australia      | Success |
+   | 2 | United Kingdom | United Kingdom | Success |
+   | 3 | USA            | USA            | Success |
+
+
+ Search by not existing keyword
+
+   Given open search page
+    When Search by 76XtRFkMQVECx7pLe9lsGB
+    Then Check No result was found for 76XtRFkMQVECx7pLe9lsGB
+
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 35932
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+апр 15, 2020 11:35:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1586986517.150][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986517.403][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986517.640][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986523.724][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986523.825][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986529.731][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986529.832][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986529.934][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986530.035][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986530.137][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986535.971][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586986536.074][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+</testsuite>

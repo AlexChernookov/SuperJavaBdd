@@ -1,0 +1,326 @@
+{
+  "className": "tests.SearchTests",
+  "name": "Search",
+  "scenarios": [
+    {
+      "className": "tests.SearchTests",
+      "testMethodName": "search_by_existing_keyword",
+      "description": "search by existing keyword",
+      "tagIds": [],
+      "explicitParameters": [
+        "search"
+      ],
+      "derivedParameters": [
+        "search"
+      ],
+      "casesAsTable": true,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "open search page",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "open search page"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 927148481
+            },
+            {
+              "name": "Search by $",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Search by"
+                },
+                {
+                  "value": "Australia",
+                  "argumentInfo": {
+                    "parameterName": "search",
+                    "argumentName": "s",
+                    "formattedValue": "Australia"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 5524121119
+            },
+            {
+              "name": "Check $ is in search result",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Check"
+                },
+                {
+                  "value": "Australia",
+                  "argumentInfo": {
+                    "parameterName": "search",
+                    "argumentName": "s",
+                    "formattedValue": "Australia"
+                  }
+                },
+                {
+                  "value": "is in search result"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 266352010
+            }
+          ],
+          "explicitArguments": [
+            "Australia"
+          ],
+          "derivedArguments": [
+            "Australia"
+          ],
+          "status": "SUCCESS",
+          "durationInNanos": 6798456925,
+          "description": "Australia"
+        },
+        {
+          "caseNr": 2,
+          "steps": [
+            {
+              "name": "open search page",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "open search page"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 403358866
+            },
+            {
+              "name": "Search by $",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Search by"
+                },
+                {
+                  "value": "United Kingdom",
+                  "argumentInfo": {
+                    "parameterName": "search",
+                    "argumentName": "s",
+                    "formattedValue": "United Kingdom"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 5302412317
+            },
+            {
+              "name": "Check $ is in search result",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Check"
+                },
+                {
+                  "value": "United Kingdom",
+                  "argumentInfo": {
+                    "parameterName": "search",
+                    "argumentName": "s",
+                    "formattedValue": "United Kingdom"
+                  }
+                },
+                {
+                  "value": "is in search result"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 187917365
+            }
+          ],
+          "explicitArguments": [
+            "United Kingdom"
+          ],
+          "derivedArguments": [
+            "United Kingdom"
+          ],
+          "status": "SUCCESS",
+          "durationInNanos": 5894567703,
+          "description": "United Kingdom"
+        },
+        {
+          "caseNr": 3,
+          "steps": [
+            {
+              "name": "open search page",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "open search page"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 898461561
+            },
+            {
+              "name": "Search by $",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Search by"
+                },
+                {
+                  "value": "USA",
+                  "argumentInfo": {
+                    "parameterName": "search",
+                    "argumentName": "s",
+                    "formattedValue": "USA"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 5247214296
+            },
+            {
+              "name": "Check $ is in search result",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Check"
+                },
+                {
+                  "value": "USA",
+                  "argumentInfo": {
+                    "parameterName": "search",
+                    "argumentName": "s",
+                    "formattedValue": "USA"
+                  }
+                },
+                {
+                  "value": "is in search result"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 205509619
+            }
+          ],
+          "explicitArguments": [
+            "USA"
+          ],
+          "derivedArguments": [
+            "USA"
+          ],
+          "status": "SUCCESS",
+          "durationInNanos": 6352343484,
+          "description": "USA"
+        }
+      ],
+      "durationInNanos": 19045368112
+    },
+    {
+      "className": "tests.SearchTests",
+      "testMethodName": "search_by_not_existing_keyword",
+      "description": "search by not existing keyword",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "open search page",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "open search page"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 400594162
+            },
+            {
+              "name": "Search by $",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Search by"
+                },
+                {
+                  "value": "76XtRFkMQVECx7pLe9lsGB",
+                  "argumentInfo": {
+                    "argumentName": "s",
+                    "formattedValue": "76XtRFkMQVECx7pLe9lsGB"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 5370772062
+            },
+            {
+              "name": "Check No result was found for $",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "Check No result was found for"
+                },
+                {
+                  "value": "76XtRFkMQVECx7pLe9lsGB",
+                  "argumentInfo": {
+                    "argumentName": "s",
+                    "formattedValue": "76XtRFkMQVECx7pLe9lsGB"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 48424066
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 5820878670
+        }
+      ],
+      "durationInNanos": 5820878670,
+      "executionStatus": "SUCCESS"
+    }
+  ],
+  "tagMap": {}
+}
