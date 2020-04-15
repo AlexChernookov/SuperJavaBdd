@@ -6,3 +6,5 @@ Gradle and ChromeDriver are required. If you are running thie of Windows machine
 To run tests just run command in terminal:
 "gradle test jgivenTestReport"
  
+After run all tests you could find a nice run report 
+build/reports/jgiven/test/html/index.html
