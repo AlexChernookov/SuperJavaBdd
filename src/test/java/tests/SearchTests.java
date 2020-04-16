@@ -44,7 +44,7 @@ public class SearchTests extends ScenarioTest<SearchResultStage, SearchResultSta
 
     @Test
     public void search_by_not_existing_keyword(){
-        String someNotExisting = Utils.randomString(22);
+        String someNotExisting = "Some not existing string " + Utils.randomString(5);
         given().open_search_page();
         when().perform_search(someNotExisting);
         then().check_no_result_found(someNotExisting);

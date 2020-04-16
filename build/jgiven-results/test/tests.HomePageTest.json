@@ -26,7 +26,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 2059475212
+              "durationInNanos": 1685994044
             },
             {
               "name": "Click \u0027DE\u0027 icon",
@@ -40,7 +40,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 1225689099
+              "durationInNanos": 1123334583
             },
             {
               "name": "Check language switched to German",
@@ -54,16 +54,16 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 5105586898
+              "durationInNanos": 5077701438
             }
           ],
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 8392608107
+          "durationInNanos": 7889377747
         }
       ],
-      "durationInNanos": 8392608107,
+      "durationInNanos": 7889377747,
       "executionStatus": "SUCCESS"
     }
   ],

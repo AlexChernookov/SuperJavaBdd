@@ -20,7 +20,7 @@ public class BrowserFactory {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        String name = props.getProperty("browser").toUpperCase();
+        String name = props.getProperty("webdriver.driver").toUpperCase();
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         switch (name){

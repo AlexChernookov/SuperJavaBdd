@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.HomePageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-16T07:18:08" hostname="MacBook-Pro-Oleksandr.local" time="8.434">
+<testsuite name="tests.HomePageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-16T07:25:36" hostname="MacBook-Pro-Oleksandr.local" time="7.951">
   <properties/>
-  <testcase name="check_change_language_to_german" classname="tests.HomePageTest" time="8.434"/>
+  <testcase name="check_change_language_to_german" classname="tests.HomePageTest" time="7.951"/>
   <system-out><![CDATA[
 Test Class: tests.HomePageTest
 
@@ -12,19 +12,13 @@ Test Class: tests.HomePageTest
     Then Check language switched to German
 
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 21319
+  <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 43957
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-апр 16, 2020 9:18:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+апр 16, 2020 9:25:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1587021488.615][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587021488.716][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587021488.840][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587021489.150][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587021489.416][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587021489.517][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587021489.747][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587021489.891][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587021490.997][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021937.404][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021939.152][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021939.254][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
 </testsuite>
