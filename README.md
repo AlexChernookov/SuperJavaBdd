@@ -9,7 +9,7 @@ Path for webdriver.gecko.driver, webdriver.chrome.driver and etc should be confi
 To run tests just run command in terminal:<br>
 <b> gradle test jgivenTestReport </b>
 
-for exaple to run test agains chromediver you need to set up browser in gradle.properties
+for exaple to run test agains chrome in gradle.properties should be following line <b>webdriver.driver=chrome</b>
 
 <b> gradle test jgivenTestReport -Dwebdriver.chrome.driver=/path/to/driver </b>
 
