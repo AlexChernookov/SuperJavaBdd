@@ -30,7 +30,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 927148481
+              "durationInNanos": 1218294640
             },
             {
               "name": "Search by $",
@@ -52,7 +52,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 5524121119
+              "durationInNanos": 5434612536
             },
             {
               "name": "Check $ is in search result",
@@ -77,7 +77,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 266352010
+              "durationInNanos": 231978450
             }
           ],
           "explicitArguments": [
@@ -87,7 +87,7 @@
             "Australia"
           ],
           "status": "SUCCESS",
-          "durationInNanos": 6798456925,
+          "durationInNanos": 6949866872,
           "description": "Australia"
         },
         {
@@ -105,7 +105,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 403358866
+              "durationInNanos": 407421256
             },
             {
               "name": "Search by $",
@@ -127,7 +127,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 5302412317
+              "durationInNanos": 5308796570
             },
             {
               "name": "Check $ is in search result",
@@ -151,8 +151,8 @@
                   "value": "is in search result"
                 }
               ],
-              "status": "PASSED",
-              "durationInNanos": 187917365
+              "status": "FAILED",
+              "durationInNanos": 117496803
             }
           ],
           "explicitArguments": [
@@ -161,8 +161,59 @@
           "derivedArguments": [
             "United Kingdom"
           ],
-          "status": "SUCCESS",
-          "durationInNanos": 5894567703,
+          "status": "FAILED",
+          "errorMessage": "java.lang.AssertionError: \nExpecting:\n \u003c\"cash\n... region united states nominal 2.5 realized inflation 2.0 real cash return 0.5 region eurozone nominal 0.4 realized inflation 1.7 real cash return -1.3 region...\nasset management\"\u003e\nto contain:\n \u003c\"united kingdom\"\u003e ",
+          "stackTrace": [
+            "searchResult.SearchResultStage.lambda$check_search_results$0(SearchResultStage.java:48)",
+            "java.util.ArrayList.forEach(ArrayList.java:1249)",
+            "org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)",
+            "searchResult.SearchResultStage.check_search_results(SearchResultStage.java:48)",
+            "searchResult.SearchResultStage$ByteBuddy$UUlU95qa.check_search_results$accessor$Ly6fBGnD(Unknown Source)",
+            "searchResult.SearchResultStage$ByteBuddy$UUlU95qa$auxiliary$NXs0kJ7z.call(Unknown Source)",
+            "searchResult.SearchResultStage$ByteBuddy$UUlU95qa.check_search_results(Unknown Source)",
+            "tests.SearchTests.search_by_existing_keyword(SearchTests.java:42)",
+            "org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)",
+            "org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)",
+            "org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)",
+            "com.tngtech.java.junit.dataprovider.DataProviderFrameworkMethod.invokeExplosively(DataProviderFrameworkMethod.java:76)",
+            "org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)",
+            "com.tngtech.jgiven.junit.JGivenMethodRule$1.evaluate(JGivenMethodRule.java:73)",
+            "org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)",
+            "org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)",
+            "org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)",
+            "org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)",
+            "org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)",
+            "org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)",
+            "org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)",
+            "org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)",
+            "org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)",
+            "org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)",
+            "org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)",
+            "org.junit.rules.RunRules.evaluate(RunRules.java:20)",
+            "org.junit.runners.ParentRunner.run(ParentRunner.java:363)",
+            "org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:116)",
+            "org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:59)",
+            "org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:39)",
+            "org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)",
+            "org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)",
+            "org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)",
+            "org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)",
+            "org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)",
+            "org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)",
+            "org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)",
+            "org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)",
+            "org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)",
+            "org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)",
+            "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)",
+            "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)",
+            "org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)",
+            "java.lang.Thread.run(Thread.java:745)"
+          ],
+          "durationInNanos": 5834679159,
           "description": "United Kingdom"
         },
         {
@@ -180,7 +231,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 898461561
+              "durationInNanos": 384416713
             },
             {
               "name": "Search by $",
@@ -202,7 +253,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 5247214296
+              "durationInNanos": 5250415307
             },
             {
               "name": "Check $ is in search result",
@@ -226,8 +277,8 @@
                   "value": "is in search result"
                 }
               ],
-              "status": "PASSED",
-              "durationInNanos": 205509619
+              "status": "FAILED",
+              "durationInNanos": 5019517332
             }
           ],
           "explicitArguments": [
@@ -236,12 +287,63 @@
           "derivedArguments": [
             "USA"
           ],
-          "status": "SUCCESS",
-          "durationInNanos": 6352343484,
+          "status": "FAILED",
+          "errorMessage": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0",
+          "stackTrace": [
+            "java.util.ArrayList.rangeCheck(ArrayList.java:653)",
+            "java.util.ArrayList.get(ArrayList.java:429)",
+            "org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)",
+            "searchResult.SearchResultStage.check_search_results(SearchResultStage.java:47)",
+            "searchResult.SearchResultStage$ByteBuddy$UUlU95qa.check_search_results$accessor$Ly6fBGnD(Unknown Source)",
+            "searchResult.SearchResultStage$ByteBuddy$UUlU95qa$auxiliary$NXs0kJ7z.call(Unknown Source)",
+            "searchResult.SearchResultStage$ByteBuddy$UUlU95qa.check_search_results(Unknown Source)",
+            "tests.SearchTests.search_by_existing_keyword(SearchTests.java:42)",
+            "org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)",
+            "org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)",
+            "org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)",
+            "com.tngtech.java.junit.dataprovider.DataProviderFrameworkMethod.invokeExplosively(DataProviderFrameworkMethod.java:76)",
+            "org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)",
+            "com.tngtech.jgiven.junit.JGivenMethodRule$1.evaluate(JGivenMethodRule.java:73)",
+            "org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)",
+            "org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)",
+            "org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)",
+            "org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)",
+            "org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)",
+            "org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)",
+            "org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)",
+            "org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)",
+            "org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)",
+            "org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)",
+            "org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)",
+            "org.junit.rules.RunRules.evaluate(RunRules.java:20)",
+            "org.junit.runners.ParentRunner.run(ParentRunner.java:363)",
+            "org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:116)",
+            "org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:59)",
+            "org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:39)",
+            "org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)",
+            "org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)",
+            "org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)",
+            "org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)",
+            "org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)",
+            "org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)",
+            "org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)",
+            "org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)",
+            "org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)",
+            "org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)",
+            "java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)",
+            "java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)",
+            "org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)",
+            "java.lang.Thread.run(Thread.java:745)"
+          ],
+          "durationInNanos": 10656067783,
           "description": "USA"
         }
       ],
-      "durationInNanos": 19045368112
+      "durationInNanos": 23440613814
     },
     {
       "className": "tests.SearchTests",
@@ -267,7 +369,7 @@
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 400594162
+              "durationInNanos": 541301061
             },
             {
               "name": "Search by $",
@@ -280,15 +382,15 @@
                   "value": "Search by"
                 },
                 {
-                  "value": "76XtRFkMQVECx7pLe9lsGB",
+                  "value": "rTVegTOzz3O7v0rtbfTxV3",
                   "argumentInfo": {
                     "argumentName": "s",
-                    "formattedValue": "76XtRFkMQVECx7pLe9lsGB"
+                    "formattedValue": "rTVegTOzz3O7v0rtbfTxV3"
                   }
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 5370772062
+              "durationInNanos": 5266951031
             },
             {
               "name": "Check No result was found for $",
@@ -301,24 +403,24 @@
                   "value": "Check No result was found for"
                 },
                 {
-                  "value": "76XtRFkMQVECx7pLe9lsGB",
+                  "value": "rTVegTOzz3O7v0rtbfTxV3",
                   "argumentInfo": {
                     "argumentName": "s",
-                    "formattedValue": "76XtRFkMQVECx7pLe9lsGB"
+                    "formattedValue": "rTVegTOzz3O7v0rtbfTxV3"
                   }
                 }
               ],
               "status": "PASSED",
-              "durationInNanos": 48424066
+              "durationInNanos": 1561114594
             }
           ],
           "explicitArguments": [],
           "derivedArguments": [],
           "status": "SUCCESS",
-          "durationInNanos": 5820878670
+          "durationInNanos": 7370980104
         }
       ],
-      "durationInNanos": 5820878670,
+      "durationInNanos": 7370980104,
       "executionStatus": "SUCCESS"
     }
   ],

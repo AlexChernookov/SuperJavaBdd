@@ -1,10 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.SearchTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-04-15T21:35:16" hostname="MacBook-Pro-Oleksandr.local" time="25.31">
+<testsuite name="tests.SearchTests" tests="4" skipped="0" failures="2" errors="0" timestamp="2020-04-16T07:17:34" hostname="MacBook-Pro-Oleksandr.local" time="31.351">
   <properties/>
-  <testcase name="search_by_existing_keyword[0: Australia]" classname="tests.SearchTests" time="7.24"/>
-  <testcase name="search_by_existing_keyword[1: United Kingdom]" classname="tests.SearchTests" time="5.895"/>
-  <testcase name="search_by_existing_keyword[2: USA]" classname="tests.SearchTests" time="6.354"/>
-  <testcase name="search_by_not_existing_keyword" classname="tests.SearchTests" time="5.821"/>
+  <testcase name="search_by_existing_keyword[0: Australia]" classname="tests.SearchTests" time="7.485"/>
+  <testcase name="search_by_existing_keyword[1: United Kingdom]" classname="tests.SearchTests" time="5.837">
+    <failure message="java.lang.AssertionError: &#10;Expecting:&#10; &lt;&quot;cash&#10;... region united states nominal 2.5 realized inflation 2.0 real cash return 0.5 region eurozone nominal 0.4 realized inflation 1.7 real cash return -1.3 region...&#10;asset management&quot;&gt;&#10;to contain:&#10; &lt;&quot;united kingdom&quot;&gt; " type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting:
+ &lt;&quot;cash
+... region united states nominal 2.5 realized inflation 2.0 real cash return 0.5 region eurozone nominal 0.4 realized inflation 1.7 real cash return -1.3 region...
+asset management&quot;&gt;
+to contain:
+ &lt;&quot;united kingdom&quot;&gt; 
+	at searchResult.SearchResultStage.lambda$check_search_results$0(SearchResultStage.java:48)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy35.forEach(Unknown Source)
+	at searchResult.SearchResultStage.check_search_results(SearchResultStage.java:48)
+	at searchResult.SearchResultStage$ByteBuddy$UUlU95qa.check_search_results$accessor$Ly6fBGnD(Unknown Source)
+	at searchResult.SearchResultStage$ByteBuddy$UUlU95qa$auxiliary$NXs0kJ7z.call(Unknown Source)
+	at com.tngtech.jgiven.impl.intercept.StepInterceptorImpl.doIntercept(StepInterceptorImpl.java:111)
+	at com.tngtech.jgiven.impl.intercept.StepInterceptorImpl.intercept(StepInterceptorImpl.java:82)
+	at com.tngtech.jgiven.impl.intercept.ByteBuddyMethodInterceptor.interceptSuper(ByteBuddyMethodInterceptor.java:37)
+	at searchResult.SearchResultStage$ByteBuddy$UUlU95qa.check_search_results(Unknown Source)
+	at tests.SearchTests.search_by_existing_keyword(SearchTests.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at com.tngtech.java.junit.dataprovider.DataProviderFrameworkMethod.invokeExplosively(DataProviderFrameworkMethod.java:76)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at com.tngtech.jgiven.junit.JGivenMethodRule$1.evaluate(JGivenMethodRule.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:116)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:59)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:39)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+  </testcase>
+  <testcase name="search_by_existing_keyword[2: USA]" classname="tests.SearchTests" time="10.658">
+    <failure message="java.lang.IndexOutOfBoundsException: Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy35.get(Unknown Source)
+	at searchResult.SearchResultStage.check_search_results(SearchResultStage.java:47)
+	at searchResult.SearchResultStage$ByteBuddy$UUlU95qa.check_search_results$accessor$Ly6fBGnD(Unknown Source)
+	at searchResult.SearchResultStage$ByteBuddy$UUlU95qa$auxiliary$NXs0kJ7z.call(Unknown Source)
+	at com.tngtech.jgiven.impl.intercept.StepInterceptorImpl.doIntercept(StepInterceptorImpl.java:111)
+	at com.tngtech.jgiven.impl.intercept.StepInterceptorImpl.intercept(StepInterceptorImpl.java:82)
+	at com.tngtech.jgiven.impl.intercept.ByteBuddyMethodInterceptor.interceptSuper(ByteBuddyMethodInterceptor.java:37)
+	at searchResult.SearchResultStage$ByteBuddy$UUlU95qa.check_search_results(Unknown Source)
+	at tests.SearchTests.search_by_existing_keyword(SearchTests.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at com.tngtech.java.junit.dataprovider.DataProviderFrameworkMethod.invokeExplosively(DataProviderFrameworkMethod.java:76)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at com.tngtech.jgiven.junit.JGivenMethodRule$1.evaluate(JGivenMethodRule.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:116)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:59)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:39)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+  </testcase>
+  <testcase name="search_by_not_existing_keyword" classname="tests.SearchTests" time="7.371"/>
   <system-out><![CDATA[
 Test Class: tests.SearchTests
 
@@ -16,39 +166,44 @@ Test Class: tests.SearchTests
 
   Cases:
 
-   | # | Description    | search         | Status  |
-   +---+----------------+----------------+---------+
-   | 1 | Australia      | Australia      | Success |
-   | 2 | United Kingdom | United Kingdom | Success |
-   | 3 | USA            | USA            | Success |
+   | # | Description    | search         | Status                                                                                                                                                              |
+   +---+----------------+----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | 1 | Australia      | Australia      | Success                                                                                                                                                             |
+   | 2 | United Kingdom | United Kingdom | Failed: java.lang.AssertionError:                                                                                                                                   |
+   |   |                |                | Expecting:                                                                                                                                                          |
+   |   |                |                |  <"cash                                                                                                                                                             |
+   |   |                |                | ... region united states nominal 2.5 realized inflation 2.0 real cash return 0.5 region eurozone nominal 0.4 realized inflation 1.7 real cash return -1.3 region... |
+   |   |                |                | asset management">                                                                                                                                                  |
+   |   |                |                | to contain:                                                                                                                                                         |
+   |   |                |                |  <"united kingdom">                                                                                                                                                 |
+   | 3 | USA            | USA            | Failed: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0                                                                                                      |
 
 
  Search by not existing keyword
 
    Given open search page
-    When Search by 76XtRFkMQVECx7pLe9lsGB
-    Then Check No result was found for 76XtRFkMQVECx7pLe9lsGB
+    When Search by rTVegTOzz3O7v0rtbfTxV3
+    Then Check No result was found for rTVegTOzz3O7v0rtbfTxV3
 
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 35932
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 11477
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-апр 15, 2020 11:35:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+апр 16, 2020 9:17:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1586986517.150][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986517.403][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986517.640][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986523.724][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986523.825][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986529.731][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986529.832][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986529.934][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986530.035][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986530.137][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986535.971][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586986536.074][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021455.800][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021456.141][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021456.243][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021456.345][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021456.447][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021462.429][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021462.532][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021468.297][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021478.896][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021478.999][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587021479.102][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
 </testsuite>

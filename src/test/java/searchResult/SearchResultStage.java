@@ -17,19 +17,12 @@ public class SearchResultStage extends Stage<SearchResultStage> {
     @ScenarioState
     private WebDriver wd;
 
-    @ExpectedScenarioState
-    CurrentStep currentStep;
 
     private SearchResultPage searchResult;
 
     @BeforeStage
     void setup() {
         searchResult = PageFactory.initElements(wd, SearchResultPage.class);
-    }
-
-    public SearchResultStage check_message(String msg){
-        assertThat(searchResult.waringMessage.getText()).contains(msg);
-        return this;
     }
 
     @As("Search by $")
